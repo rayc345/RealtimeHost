@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://schemas.microsoft.com/windows/2009/Ribbon">
+	<Application.Commands>
+		<Command Name="cmdQAT" Symbol="ID_QAT"/>
+		<Command Name="cmdCustomizeQAT" Symbol="ID_CUSTOM_QAT"/>
+		<Command Name="cmdHelp" Symbol="IDR_CMD_HELP">
+			<Command.LabelTitle>
+				<String>获取关于此软件的使用指南，技术支持等内容</String>
+			</Command.LabelTitle>
+		</Command>
+		<Command Name="cmdFileMenu" Symbol="ID_FILE_MENU"/>
+		<Command Name="cmdMRUItems" Symbol="ID_FILE_MRUITEMS">
+			<Command.LabelTitle>
+				<String>最近打开的项目</String>
+			</Command.LabelTitle>
+		</Command>
+		<Command Name="cmdNewFile" Symbol="IDR_CMD_NEW">
+			<Command.LabelTitle>
+				<String>新建</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image MinDPI="96">res/New_Big_96.png</Image>
+			</Command.LargeImages>
+			<Command.SmallImages>
+				<Image MinDPI="96">res/New_Small_96.png</Image>
+			</Command.SmallImages>
+		</Command>
+		<Command Name="cmdOpenFile" Symbol="IDR_CMD_OPEN">
+			<Command.LabelTitle>
+				<String>打开</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image MinDPI="96">res/Open_Big_96.bmp</Image>
+			</Command.LargeImages>
+			<Command.SmallImages>
+				<Image MinDPI="96">res/Open_Small_96.bmp</Image>
+			</Command.SmallImages>
+		</Command>
+		<Command Name="cmdSaveFile" Symbol="IDR_CMD_SAVE">
+			<Command.LabelTitle>
+				<String>保存</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image MinDPI="96">res/Save_Big_96.png</Image>
+			</Command.LargeImages>
+			<Command.SmallImages>
+				<Image MinDPI="96">res/Save_Small_96.png</Image>
+			</Command.SmallImages>
+		</Command>
+		<Command Name="cmdSaveAsFile" Symbol="IDR_CMD_SAVEAS">
+			<Command.LabelTitle>
+				<String>另存为</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image MinDPI="96">res/Saveas_Big_96.png</Image>
+			</Command.LargeImages>
+			<Command.SmallImages>
+				<Image MinDPI="96">res/Saveas_Small_96.png</Image>
+			</Command.SmallImages>
+		</Command>
+		<Command Name="cmdExit" Symbol="IDR_CMD_EXIT">
+			<Command.LabelTitle>
+				<String>退出</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image MinDPI="96">res/Exit_Big_96.bmp</Image>
+			</Command.LargeImages>
+			<Command.SmallImages>
+				<Image MinDPI="96">res/Exit_Small_96.bmp</Image>
+			</Command.SmallImages>
+		</Command>
+		<Command Name="TabHome">
+			<Command.LabelTitle>
+				<String>主页</String>
+			</Command.LabelTitle>
+		</Command>
+		<Command Name="GroupCOM">
+			<Command.LabelTitle>
+				<String>通讯</String>
+			</Command.LabelTitle>
+		</Command>
+		<Command Name="GroupTarget">
+			<Command.LabelTitle>
+				<String>目标机</String>
+			</Command.LabelTitle>
+		</Command>
+		<Command Name="GroupParam">
+			<Command.LabelTitle>
+				<String>参数</String>
+			</Command.LabelTitle>
+		</Command>
+		<Command Name="GroupView">
+			<Command.LabelTitle>
+				<String>显示</String>
+			</Command.LabelTitle>
+		</Command>
+		<Command Name="cmdConnections" Symbol="IDR_CMD_CONNECT">
+			<Command.LabelTitle>
+				<String>设备连接</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image>res/serial-port.png</Image>
+			</Command.LargeImages>
+		</Command>
+		<Command Name="cmdRefreshComs" Symbol="IDR_CMD_REFRESH">
+			<Command.LabelTitle>
+				<String>刷新列表</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image>res/reload.png</Image>
+			</Command.LargeImages>
+		</Command>
+		<Command Name="cmdListen" Symbol="IDR_CMD_LISTEN">
+			<Command.LabelTitle>
+				<String>监听</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image>res/server.png</Image>
+			</Command.LargeImages>
+		</Command>
+		<Command Name="cmdFirmware" Symbol="IDR_CMD_FIRM">
+			<Command.LabelTitle>
+				<String>固件选择</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image>res/circuit.png</Image>
+			</Command.LargeImages>
+		</Command>
+		<Command Name="cmdFirmwareBrowser" Symbol="IDR_CMD_FIRMBROW">
+			<Command.LabelTitle>
+				<String>浏览文件</String>
+			</Command.LabelTitle>
+		</Command>
+		<Command Name="cmdPause" Symbol="IDR_CMD_PAUSEEXE">
+			<Command.LabelTitle>
+				<String>暂停</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image>res/pause.png</Image>
+			</Command.LargeImages>
+		</Command>
+		<Command Name="cmdReload" Symbol="IDR_CMD_RELOAD">
+			<Command.LabelTitle>
+				<String>重载</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image>res/reload.png</Image>
+			</Command.LargeImages>
+		</Command>
+		<Command Name="cmdAddParameter" Symbol="IDR_CMD_NEWPA">
+			<Command.LabelTitle>
+				<String>添加</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image>res/new.png</Image>
+			</Command.LargeImages>
+			<Command.SmallImages>
+				<Image>res/new.png</Image>
+			</Command.SmallImages>
+		</Command>
+		<Command Name="cmdDeleteParameter" Symbol="IDR_CMD_DELPA">
+			<Command.LabelTitle>
+				<String>删除</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image>res/delete.png</Image>
+			</Command.LargeImages>
+			<Command.SmallImages>
+				<Image>res/delete.png</Image>
+			</Command.SmallImages>
+	</Command>
+		<Command Name="cmdValue" Symbol="IDR_CMD_VALUE">
+			<Command.LabelTitle>
+				<String>数值</String>
+			</Command.LabelTitle>
+		</Command>
+		<Command Name="cmdMoveUp" Symbol="IDR_CMD_MOVEUP">
+			<Command.LabelTitle>
+				<String>上移</String>
+			</Command.LabelTitle>
+			<Command.SmallImages>
+				<Image>res/up.png</Image>
+			</Command.SmallImages>
+		</Command>
+		<Command Name="cmdMoveDown" Symbol="IDR_CMD_MOVEDOWN">
+			<Command.LabelTitle>
+				<String>下移</String>
+			</Command.LabelTitle>
+			<Command.SmallImages>
+				<Image>res/down.png</Image>
+			</Command.SmallImages>
+		</Command>
+		<Command Name="cmdMaxValue" Symbol="IDR_CMD_MAXVALUE">
+			<Command.LabelTitle>
+				<String>最大值</String>
+			</Command.LabelTitle>
+		</Command>
+		<Command Name="cmdMinValue" Symbol="IDR_CMD_MINVALUE">
+			<Command.LabelTitle>
+				<String>最小值</String>
+			</Command.LabelTitle>
+		</Command>
+		<Command Name="cmdStep" Symbol="IDR_CMD_STEP">
+			<Command.LabelTitle>
+				<String>步进</String>
+			</Command.LabelTitle>
+		</Command>
+		<Command Name="cmdClearLog" Symbol="IDR_CMD_CLEARLOG">
+			<Command.LabelTitle>
+				<String>清空日志</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image>res/clear.png</Image>
+			</Command.LargeImages>
+		</Command>
+		<Command Name="cmdClearText" Symbol="IDR_CMD_CLEARTXT">
+			<Command.LabelTitle>
+				<String>清空文本</String>
+			</Command.LabelTitle>
+			<Command.LargeImages>
+				<Image>res/log.png</Image>
+			</Command.LargeImages>
+		</Command>
+	</Application.Commands>
+	<Application.Views>
+		<Ribbon>
+			<Ribbon.QuickAccessToolbar>
+				<QuickAccessToolbar CommandName="cmdQAT" CustomizeCommandName="cmdCustomizeQAT">
+					<QuickAccessToolbar.ApplicationDefaults>
+						<Button CommandName="cmdSaveFile"/>
+					</QuickAccessToolbar.ApplicationDefaults>
+				</QuickAccessToolbar>
+			</Ribbon.QuickAccessToolbar>
+			<Ribbon.HelpButton>
+				<HelpButton CommandName="cmdHelp"/>
+			</Ribbon.HelpButton>
+			<Ribbon.ApplicationMenu>
+				<ApplicationMenu CommandName="cmdFileMenu">
+					<ApplicationMenu.RecentItems>
+						<RecentItems CommandName="cmdMRUItems"/>
+					</ApplicationMenu.RecentItems>
+					<MenuGroup>
+						<Button CommandName="cmdNewFile"/>
+						<Button CommandName="cmdOpenFile"/>
+						<Button CommandName="cmdSaveFile"/>
+						<Button CommandName="cmdSaveAsFile"/>
+					</MenuGroup>
+					<MenuGroup>
+						<Button CommandName="cmdExit"/>
+					</MenuGroup>
+				</ApplicationMenu>
+			</Ribbon.ApplicationMenu>
+			<Ribbon.Tabs>
+				<Tab CommandName="TabHome">
+					<Tab.ScalingPolicy>
+						<ScalingPolicy>
+							<ScalingPolicy.IdealSizes>
+								<Scale Group="GroupCOM" Size="Large"/>
+								<Scale Group="GroupTarget" Size="Large"/>
+								<Scale Group="GroupParam" Size="Large"/>
+								<Scale Group="GroupView" Size="Large"/>
+							</ScalingPolicy.IdealSizes>
+							<Scale Group="GroupView" Size="Medium"/>
+							<Scale Group="GroupTarget" Size="Medium"/>
+							<Scale Group="GroupParam" Size="Medium"/>
+							<Scale Group="GroupParam" Size="Small"/>
+							<Scale Group="GroupView" Size="Popup"/>
+							<Scale Group="GroupTarget" Size="Popup"/>
+						</ScalingPolicy>
+					</Tab.ScalingPolicy>
+					<Group CommandName="GroupCOM" SizeDefinition="TwoButtons">
+						<SplitButtonGallery CommandName="cmdConnections" TextPosition="Right" Type="Items">
+							<SplitButtonGallery.MenuLayout>
+								<VerticalMenuLayout/>
+							</SplitButtonGallery.MenuLayout>
+							<Button CommandName="cmdRefreshComs"/>
+						</SplitButtonGallery>
+						<ToggleButton CommandName="cmdListen"/>
+					</Group>
+					<Group CommandName="GroupTarget" SizeDefinition="ThreeButtons">
+						<DropDownGallery CommandName="cmdFirmware" TextPosition="Right" Type="Items">
+							<DropDownGallery.MenuLayout>
+								<VerticalMenuLayout/>
+							</DropDownGallery.MenuLayout>
+							<Button CommandName="cmdFirmwareBrowser"/>
+						</DropDownGallery>
+						<ToggleButton CommandName="cmdPause"/>
+						<Button CommandName="cmdReload"/>
+					</Group>
+					<Group CommandName="GroupParam">
+						<SizeDefinition>
+							<ControlNameMap>
+								<ControlNameDefinition Name="cmdValue"/>
+								<ControlNameDefinition Name="cmdAddParameter"/>
+								<ControlNameDefinition Name="cmdDeleteParameter"/>
+								<ControlNameDefinition Name="cmdMoveUp"/>
+								<ControlNameDefinition Name="cmdMoveDown"/>
+								<ControlNameDefinition Name="cmdMaxValue"/>
+								<ControlNameDefinition Name="cmdMinValue"/>
+								<ControlNameDefinition Name="cmdStep"/>
+							</ControlNameMap>
+							<GroupSizeDefinition Size="Large">
+								<ControlGroup>
+									<ControlSizeDefinition ControlName="cmdAddParameter" ImageSize="Large" IsLabelVisible="true"/>
+									<ControlSizeDefinition ControlName="cmdDeleteParameter" ImageSize="Large" IsLabelVisible="true"/>
+								</ControlGroup>
+								<ColumnBreak ShowSeparator="true"/>
+								<Row>
+									<ControlGroup>
+										<ControlSizeDefinition ControlName="cmdValue" IsImageVisible="false" IsLabelVisible="true"/>
+									</ControlGroup>
+								</Row>
+								<Row>
+									<ControlGroup>
+										<ControlSizeDefinition ControlName="cmdMoveUp" ImageSize="Small" IsLabelVisible="true"/>
+									</ControlGroup>
+								</Row>
+								<Row>
+									<ControlGroup>
+										<ControlSizeDefinition ControlName="cmdMoveDown" ImageSize="Small" IsLabelVisible="true"/>
+									</ControlGroup>
+								</Row>
+								<ColumnBreak ShowSeparator="true"/>
+								<Row>
+									<ControlSizeDefinition ControlName="cmdMaxValue" IsImageVisible="false" IsLabelVisible="true"/>
+								</Row>
+								<Row>
+									<ControlSizeDefinition ControlName="cmdMinValue" IsImageVisible="false" IsLabelVisible="true"/>
+								</Row>
+								<Row>
+									<ControlSizeDefinition ControlName="cmdStep" IsImageVisible="false" IsLabelVisible="true"/>
+								</Row>
+							</GroupSizeDefinition>
+							<GroupSizeDefinition Size="Medium">
+								<Row>
+									<ControlGroup>
+										<ControlSizeDefinition ControlName="cmdAddParameter" ImageSize="Small" IsLabelVisible="true"/>
+									</ControlGroup>
+								</Row>
+								<Row>
+									<ControlGroup>
+										<ControlSizeDefinition ControlName="cmdDeleteParameter" ImageSize="Small" IsLabelVisible="true"/>
+									</ControlGroup>
+								</Row>
+								<ColumnBreak ShowSeparator="true"/>
+								<Row>
+									<ControlGroup>
+										<ControlSizeDefinition ControlName="cmdValue" IsImageVisible="false" IsLabelVisible="true"/>
+									</ControlGroup>
+								</Row>
+								<Row>
+									<ControlGroup>
+										<ControlSizeDefinition ControlName="cmdMoveUp" ImageSize="Small" IsLabelVisible="true"/>
+									</ControlGroup>
+								</Row>
+								<Row>
+									<ControlGroup>
+										<ControlSizeDefinition ControlName="cmdMoveDown" ImageSize="Small" IsLabelVisible="true"/>
+									</ControlGroup>
+								</Row>
+								<ColumnBreak ShowSeparator="true"/>
+								<Row>
+									<ControlSizeDefinition ControlName="cmdMaxValue" IsImageVisible="false" IsLabelVisible="true"/>
+								</Row>
+								<Row>
+									<ControlSizeDefinition ControlName="cmdMinValue" IsImageVisible="false" IsLabelVisible="true"/>
+								</Row>
+								<Row>
+									<ControlSizeDefinition ControlName="cmdStep" IsImageVisible="false" IsLabelVisible="true"/>
+								</Row>
+							</GroupSizeDefinition>
+							<GroupSizeDefinition Size="Small">
+								<Row>
+									<ControlSizeDefinition ControlName="cmdValue" IsImageVisible="false" IsLabelVisible="true"/>
+								</Row>
+								<Row>
+									<ControlSizeDefinition ControlName="cmdAddParameter" ImageSize="Small" IsLabelVisible="true"/>
+									<ControlSizeDefinition ControlName="cmdMoveUp" ImageSize="Small" IsLabelVisible="true"/>
+								</Row>
+								<Row>
+									<ControlSizeDefinition ControlName="cmdDeleteParameter" ImageSize="Small" IsLabelVisible="true"/>
+									<ControlSizeDefinition ControlName="cmdMoveDown" ImageSize="Small" IsLabelVisible="true"/>
+								</Row>
+								<ColumnBreak ShowSeparator="true"/>
+								<Row>
+									<ControlSizeDefinition ControlName="cmdMaxValue" IsImageVisible="false" IsLabelVisible="true"/>
+								</Row>
+								<Row>
+									<ControlSizeDefinition ControlName="cmdMinValue" IsImageVisible="false" IsLabelVisible="true"/>
+								</Row>
+								<Row>
+									<ControlSizeDefinition ControlName="cmdStep" IsImageVisible="false" IsLabelVisible="true"/>
+								</Row>
+							</GroupSizeDefinition>
+						</SizeDefinition>
+						<Spinner CommandName="cmdValue"/>
+						<Button CommandName="cmdAddParameter"/>
+						<Button CommandName="cmdDeleteParameter"/>
+						<Button CommandName="cmdMoveUp"/>
+						<Button CommandName="cmdMoveDown"/>
+						<ComboBox CommandName="cmdMaxValue"/>
+						<ComboBox CommandName="cmdMinValue"/>
+						<ComboBox CommandName="cmdStep"/>
+					</Group>
+					<Group CommandName="GroupView" SizeDefinition="TwoButtons">
+						<Button CommandName="cmdClearLog"/>
+						<Button CommandName="cmdClearText"/>
+					</Group>
+				</Tab>
+			</Ribbon.Tabs>
+		</Ribbon>
+	</Application.Views>
+</Application>

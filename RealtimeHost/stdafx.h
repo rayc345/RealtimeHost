@@ -1,0 +1,42 @@
+#pragma once
+#include <SDKDDKVer.h>
+#define WIN32_LEAN_AND_MEAN
+#include <windows.h>
+#include <windowsx.h>
+#include <Richedit.h>
+#include <CommCtrl.h>
+#include <UIRibbon.h>
+#include <uiribbonpropertyhelpers.h>
+#include <shobjidl_core.h>
+#include <shlwapi.h>
+#include <wbemcli.h>
+#include <comutil.h>
+#include <atlcomcli.h>
+#include <atltypes.h>
+#include <tchar.h>
+#include <functional>
+#include <map>
+#include <queue>
+#include <vector>
+#include <algorithm>
+#include <cassert>
+#include <string>
+#include <atomic>
+#include <future>
+#include <condition_variable>
+#include <chrono>
+#include <numeric>
+#include <cmath>
+#include <sstream>
+#include <regex>
+#include "pugixml/pugixml.hpp"
+#include <wincodec.h>
+#include <ws2tcpip.h>
+
+#pragma comment(lib,"WbemUuid.lib")
+#pragma comment(lib,"Ws2_32.lib")
+#ifdef _UNICODE
+#pragma comment(lib,"comsuppw.lib")
+#else
+#pragma comment(lib,"comsupp.lib")
+#endif
